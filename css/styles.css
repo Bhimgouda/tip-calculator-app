@@ -122,11 +122,13 @@ form{
     padding: 1rem 1.5rem 1rem ;
     border-radius: 7px;
     display: flex;
+    align-items: center;
 }
 
 
 .input-group input{
     color: var(--color-Very-dark-cyan);
+    padding-left: 1rem;
 }
 
 .input-group input{
