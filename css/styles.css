@@ -1,0 +1,259 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* Color Pallete */
+
+:root{
+    --color-strong-cyan:hsl(172, 67%, 45%);
+    --color-Very-dark-cyan: hsl(183, 100%, 15%);
+    --color-Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --color-Grayish-cyan: hsl(184, 14%, 56%);
+    --color-Light-grayish-cyan: hsl(185, 41%, 84%);
+    --color-Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --color-White: hsl(0, 0%, 100%);
+}
+
+
+/* Typography */
+
+body{
+    font-size: 1.8rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+form{
+    font-size: 2.4rem;
+}
+
+
+
+/* grid */
+
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width:1024px) {
+    .grid--cols-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+.section{
+    background-color: var(--color-Light-grayish-cyan);
+}
+
+.card{
+    background-color: var(--color-White);
+    border-radius: 25px;
+    padding: 3rem 2rem;
+}
+
+.logo-container{
+    padding: 2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+/* Buttons */
+
+.btn{
+    border-radius: 5px;
+    width: 13.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    border: none;
+}
+
+.tip-btn{
+    margin-bottom: 1rem;
+    background-color: var(--color-Very-dark-cyan);
+    color: var(--color-White);
+    cursor: pointer;
+}
+
+.tip-btn:hover{
+    background-color: var(--color-Grayish-cyan);
+}
+
+.tip-btn:focus{
+    background-color: var(--color-strong-cyan);
+}
+
+
+.reset-btn{
+    background-color: var(--color-strong-cyan);
+    width: 100%;
+    padding: 1rem 2rem;
+    color: var(--color-Very-dark-cyan);
+    margin-top: 2rem;
+    font-size: large;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px) {
+    
+}
+/* Input Area */
+
+.input-group-container{
+    margin: 2rem 0rem;
+}
+
+.input-group-container:first-of-type{
+    margin-top: 0rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Input Group */
+
+.input-group{
+    margin-top: 1rem;
+    background-color: var(--color-Very-light-grayish-cyan);
+    padding: 1rem 1.5rem 1rem ;
+    border-radius: 7px;
+    display: flex;
+}
+
+
+.input-group input{
+    color: var(--color-Very-dark-cyan);
+}
+
+.input-group input{
+    width: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    flex-grow: 1;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+
+
+
+.tip-custom{
+    background-color: var(--color-Very-light-grayish-cyan);
+    text-align: right;
+    outline: none;
+    color: var(--color-Very-dark-cyan);
+    max-height: 38px;
+}
+
+.tip-custom::placeholder{
+    text-align: center;
+}
+
+.tip-custom:focus::placeholder{
+    color: transparent;
+}
+
+.tip-custom:focus{
+    border: 2px solid var(--color-Very-dark-cyan);
+}
+
+.select-tip{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+}
+
+@media screen and (min-width:450px) {
+    .select-tip{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.label, label{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: var(--color-Dark-grayish-cyan);
+}
+
+
+
+/* Output Area */
+
+.output-area{
+    background-color: var(--color-Very-dark-cyan);
+    padding: 2rem;
+    color: var(--color-White);
+    border-radius: 15px;
+    font-size: 1.4rem;
+}
+
+.output-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.output-container p{
+    margin: 1.2rem;
+}
+
+.output-amount{
+    color: var(--color-strong-cyan);
+    font-size: 2.8rem;
+}
+
+.output-amount::before{
+    content: '$';
+}
+
+.output-container span{
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    color: var(--color-Grayish-cyan);
+}
+
+@media screen and (min-width:1024px) {
+    .card{
+        box-shadow: 0 0 50px 10px hsl(187, 16%, 66%);
+    }
+
+    .output-area{
+        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo-container{
+        margin-bottom: 2.5rem;
+    }
+
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+    }
+
+    .input-group{
+        margin-right: 2rem;
+    }
+
+    .output-amount{
+        font-size: 4rem;
+    }
+
+    .section{
+        min-height: 100vh;
+    }
+}
+
+
