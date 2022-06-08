@@ -239,8 +239,6 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     .container{
         max-width: 900px;
         margin: 0 auto;
-        position: relative;
-        top: 50px;
     }
 
     .input-group{
