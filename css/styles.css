@@ -253,6 +253,8 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
 
     .section{
         min-height: 100vh;
+        display: flex;
+        align-items: center;
     }
 }
 
