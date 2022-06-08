@@ -68,13 +68,13 @@ form{
 
 .btn{
     border-radius: 5px;
-    width: 13rem;
     text-align: center;
     padding: 0.5rem;
     border: none;
 }
 
 .tip-btn{
+    width: 13rem;
     margin-bottom: 1rem;
     background-color: var(--color-Very-dark-cyan);
     color: var(--color-White);
@@ -150,6 +150,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     outline: none;
     color: var(--color-Very-dark-cyan);
     max-height: 38px;
+    max-width: 13rem;
 }
 
 .tip-custom::placeholder{
@@ -225,7 +226,11 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
         box-shadow: 0 0 50px 10px hsl(187, 16%, 66%);
     }
 
-    .btn{
+    .tip-btn{
+        width: 10rem;
+    }
+
+    .tip-custom{
         width: 10rem;
     }
 
