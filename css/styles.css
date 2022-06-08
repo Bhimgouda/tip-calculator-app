@@ -226,13 +226,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
         box-shadow: 0 0 50px 10px hsl(187, 16%, 66%);
     }
 
-    .tip-btn{
-        width: 10rem;
-    }
 
-    .tip-custom{
-        width: 10rem;
-    }
 
     .output-area{
         margin-left: 2.5rem;
@@ -246,7 +240,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
     }
 
     .container{
-        max-width: 900px;
+        width: 900px;
         margin: 0 auto;
     }
 
