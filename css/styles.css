@@ -68,7 +68,7 @@ form{
 
 .btn{
     border-radius: 5px;
-    width: 13.5rem;
+    width: 13rem;
     text-align: center;
     padding: 0.5rem;
     border: none;
@@ -225,6 +225,10 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
         box-shadow: 0 0 50px 10px hsl(187, 16%, 66%);
     }
 
+    .btn{
+        width: 10rem;
+    }
+
     .output-area{
         margin-left: 2.5rem;
         display: flex;
@@ -255,5 +259,7 @@ input::-webkit-inner-spin-button, input::-webkit-outer-spin-button{
         align-items: center;
     }
 }
+
+
 
 
